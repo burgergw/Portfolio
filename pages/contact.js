@@ -38,7 +38,7 @@ const contact = () => {
         <Head>
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></Script>
             <Script>
-            {`
+            
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments)
@@ -46,7 +46,7 @@ const contact = () => {
             gtag('js', new Date());
             gtag('config', 'G-S0ECD82STC');
 
-          `}
+          
             </Script>
             
                 
