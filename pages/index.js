@@ -4,6 +4,7 @@ import cvpic from '../static/cvpic.jpg';
 import Image from 'next/image';
 import NavLink from '../components/NavLink';
 import Head from 'next/head'
+import Script from 'next/script';
 
 
 //Index functional arrow component that acts as home/about page 

@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link';
 import NavLink from '../components/NavLink';
 import Head from 'next/head'
+import Script from 'next/script';
 
 //Functional arrow component that act as the contact page
 const contact = () => {

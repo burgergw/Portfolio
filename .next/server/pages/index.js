@@ -33,8 +33,12 @@ var NavLink = __webpack_require__(3197);
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+// EXTERNAL MODULE: ./node_modules/next/script.js
+var script = __webpack_require__(4298);
+var script_default = /*#__PURE__*/__webpack_require__.n(script);
 ;// CONCATENATED MODULE: ./pages/index.js
 //Importing requred packages and components
+
 
 
 
@@ -168,10 +172,10 @@ const index = ()=>{
                 }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx(Script, {
+                        /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
                             src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Script, {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)((script_default()), {
                             strategy: "afterInteractive",
                             children: [
                                 "window.dataLayer = window.dataLayer || []; function gtag() ",
