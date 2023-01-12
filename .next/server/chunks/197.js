@@ -83,13 +83,17 @@ const NavLink = ()=>{
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_5___default()), {
                         src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"
                     }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_script__WEBPACK_IMPORTED_MODULE_5___default()), {
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_5___default()), {
                         strategy: "afterInteractive",
-                        children: [
-                            "window.dataLayer = window.dataLayer || []; function gtag() ",
-                            dataLayer.push(arguments),
-                            "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC');"
-                        ]
+                        children: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments)
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-S0ECD82STC');
+
+  `
                     })
                 ]
             })
