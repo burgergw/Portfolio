@@ -2,9 +2,22 @@
 import React from 'react'
 import Link from 'next/link';
 import NavLink from '../components/NavLink';
+import Head from 'next/head'
+
 //Functional arrow component that act as the contact page
 const contact = () => {
   return (
+    <>
+    <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S0ECD82STC');
+      </script>
+    </Head>
     <div>
         <NavLink />
         <h1>Contact me:</h1>
@@ -31,6 +44,7 @@ const contact = () => {
         
         `}</style>
     </div>
+    </>
   )
 }
 //Exporting contact component  

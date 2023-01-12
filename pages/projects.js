@@ -2,9 +2,22 @@
 import React from 'react';
 import Link from 'next/link';
 import NavLink from '../components/NavLink';
+import Head from 'next/head'
+
 //Project page, functional arrow component, that displays projects i have worked on
 const projects = () => {
   return (
+    <>
+    <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S0ECD82STC');
+      </script>
+    </Head>
     <div>
         <NavLink />
         <h1>Projects I have worked on:</h1>
@@ -23,6 +36,7 @@ const projects = () => {
             }
         `}</style>
     </div>
+    </>
   )
 }
 //Exporting projects component

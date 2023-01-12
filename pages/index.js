@@ -3,10 +3,23 @@ import React from 'react'
 import cvpic from '../static/cvpic.jpg';
 import Image from 'next/image';
 import NavLink from '../components/NavLink';
+import Head from 'next/head'
+
 
 //Index functional arrow component that acts as home/about page 
 const index = () => {
   return (
+    <>
+    <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        </script>
+    </Head>
     <div>
     {/*Header navigation component*/}
     <NavLink />
@@ -67,6 +80,7 @@ const index = () => {
             }
         `}</style>
     </div>
+    </>
   )
 }
 //Exporting index component

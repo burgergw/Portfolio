@@ -1,9 +1,23 @@
 //Importing required packages
 import React from 'react'
 import Link from 'next/link'
-//Navigation functional arrow component that acts as a header component that the user can use to navigate the pages of the
+import Head from 'next/head'
+
+//Navigation functional arrow component that acts as a header component that the user can use to navigate the pages of the<!-- Google tag (gtag.js) -->
 const NavLink = () => {
   return (
+    <>
+    <Head>
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        </script>
+    </Head>
     <div className='nav-link'>
     <label>GW Burger</label>
         <ul>
@@ -68,6 +82,7 @@ const NavLink = () => {
             
         `}</style>
     </div>
+    </>
     
         )
 }
