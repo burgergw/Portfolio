@@ -8,16 +8,7 @@ import Head from 'next/head'
 const contact = () => {
   return (
     <>
-    <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-
-      gtag('config', 'G-S0ECD82STC');
-      </script>
-    </Head>
+    
     <div>
         <NavLink />
         <h1>Contact me:</h1>
@@ -43,6 +34,17 @@ const contact = () => {
             }
         
         `}</style>
+        <Head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-S0ECD82STC');
+    </script>
+    </Head>
     </div>
     </>
   )

@@ -7,17 +7,7 @@ import Head from 'next/head'
 const NavLink = () => {
   return (
     <>
-    <Head>
     
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0ECD82STC');
-        </script>
-    </Head>
     <div className='nav-link'>
     <label>GW Burger</label>
         <ul>
@@ -81,6 +71,17 @@ const NavLink = () => {
             
             
         `}</style>
+        <Head>
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        </script>
+    </Head>
     </div>
     </>
     

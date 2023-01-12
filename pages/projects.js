@@ -8,16 +8,7 @@ import Head from 'next/head'
 const projects = () => {
   return (
     <>
-    <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-
-      gtag('config', 'G-S0ECD82STC');
-      </script>
-    </Head>
+    
     <div>
         <NavLink />
         <h1>Projects I have worked on:</h1>
@@ -35,6 +26,16 @@ const projects = () => {
                 background: lightgrey;
             }
         `}</style>
+        <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+      </script>
+    </Head>
     </div>
     </>
   )
