@@ -27,24 +27,20 @@ const projects = () => {
                 background: lightgrey;
             }
         `}</style>
-        <head>
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script>
         
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-S0ECD82STC');
-
-        
-        </script>
-        
-            
-        
-</head>
     </div>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        `}}>
+        </script>
+    </head>
     </>
   )
 }

@@ -76,22 +76,17 @@ const NavLink = () => {
         
     </div>
     <head>
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script>
-        
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments)
-        }
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-S0ECD82STC');
 
-        
+        gtag('config', 'G-S0ECD82STC');
+        `}}>
         </script>
-        
-            
-        
-</head>
+    </head>
     
         
     
