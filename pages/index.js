@@ -73,7 +73,7 @@ const index = () => {
         `}</style>
         <Head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></Script>
-        <Script strategy="afterInteractive">
+        <Script>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag() {
