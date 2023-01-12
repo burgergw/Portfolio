@@ -77,16 +77,15 @@ const contact = ()=>{
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_5___default()), {
                     children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
-                            src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC",
-                            className: "jsx-21e5cd0c08d7f47b"
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Script, {
+                            src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"
                         }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("script", {
-                            className: "jsx-21e5cd0c08d7f47b",
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Script, {
+                            strategy: "afterInteractive",
                             children: [
-                                "function gtag() ",
+                                "window.dataLayer = window.dataLayer || []; function gtag() ",
                                 dataLayer.push(arguments),
-                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC'); window.dataLayer = window.dataLayer || [];"
+                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC');"
                             ]
                         })
                     ]
@@ -311,7 +310,7 @@ module.exports = require("styled-jsx/style");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [270,676,664,197], () => (__webpack_exec__(1406)));
+var __webpack_exports__ = __webpack_require__.X(0, [270,676,835,197], () => (__webpack_exec__(1406)));
 module.exports = __webpack_exports__;
 
 })();

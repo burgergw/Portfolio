@@ -168,16 +168,15 @@ const index = ()=>{
                 }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("script", {
-                            src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC",
-                            className: "jsx-da66b0d7237707f6"
+                        /*#__PURE__*/ jsx_runtime_.jsx(Script, {
+                            src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("script", {
-                            className: "jsx-da66b0d7237707f6",
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Script, {
+                            strategy: "afterInteractive",
                             children: [
-                                "function gtag() ",
+                                "window.dataLayer = window.dataLayer || []; function gtag() ",
                                 dataLayer.push(arguments),
-                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC'); window.dataLayer = window.dataLayer || [];"
+                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC');"
                             ]
                         })
                     ]
@@ -454,7 +453,7 @@ module.exports = require("styled-jsx/style");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [270,676,664,675,197], () => (__webpack_exec__(5078)));
+var __webpack_exports__ = __webpack_require__.X(0, [270,676,835,675,197], () => (__webpack_exec__(5078)));
 module.exports = __webpack_exports__;
 
 })();

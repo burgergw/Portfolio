@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Script from 'next/script';
 
 //Navigation functional arrow component that acts as a header component that the user can use to navigate the pages of the<!-- Google tag (gtag.js) -->
 const NavLink = () => {
@@ -75,15 +76,16 @@ const NavLink = () => {
         
     </div>
     <Head>
-            <script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-            <script>
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></Script>
+            <Script strategy="afterInteractive">
+            window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments)
             }
             gtag('js', new Date());
             gtag('config', 'G-S0ECD82STC');
-            window.dataLayer = window.dataLayer || [];
-            </script>
+            
+            </Script>
             
                 
             
