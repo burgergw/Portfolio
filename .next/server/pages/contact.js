@@ -78,16 +78,15 @@ const contact = ()=>{
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_5___default()), {
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
-                            async: true,
                             src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC",
                             className: "jsx-21e5cd0c08d7f47b"
                         }),
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("script", {
                             className: "jsx-21e5cd0c08d7f47b",
                             children: [
-                                "var dataLayer = window.dataLayer = window.dataLayer || []; function gtag() ",
+                                "function gtag() ",
                                 dataLayer.push(arguments),
-                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC');"
+                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC'); window.dataLayer = window.dataLayer || [];"
                             ]
                         })
                     ]

@@ -169,16 +169,15 @@ const index = ()=>{
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("script", {
-                            async: true,
                             src: "https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC",
                             className: "jsx-da66b0d7237707f6"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("script", {
                             className: "jsx-da66b0d7237707f6",
                             children: [
-                                "var dataLayer = window.dataLayer = window.dataLayer || []; function gtag() ",
+                                "function gtag() ",
                                 dataLayer.push(arguments),
-                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC');"
+                                "gtag('js', new Date()); gtag('config', 'G-S0ECD82STC'); window.dataLayer = window.dataLayer || [];"
                             ]
                         })
                     ]
