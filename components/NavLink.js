@@ -7,7 +7,7 @@ import Script from 'next/script';
 //Navigation functional arrow component that acts as a header component that the user can use to navigate the pages of the<!-- Google tag (gtag.js) -->
 const NavLink = () => {
   return (
-    <>
+    <body>
     
     <div className='nav-link'>
     <label>GW Burger</label>
@@ -91,7 +91,7 @@ const NavLink = () => {
         
     
     
-    </>
+    </body>
         )
 }
 //Exporting NavLink component

@@ -8,7 +8,7 @@ import Script from 'next/script';
 //Functional arrow component that act as the contact page
 const contact = () => {
   return (
-    <>
+    <body>
     
     <div>
         <NavLink />
@@ -49,8 +49,9 @@ const contact = () => {
         `}}>
         </script>
     </head>
-    </>
+    </body>
   )
 }
 //Exporting contact component  
 export default contact;
+//G-S0ECD82STC

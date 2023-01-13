@@ -10,7 +10,7 @@ import Script from 'next/script';
 //Index functional arrow component that acts as home/about page 
 const index = () => {
   return (
-    <>
+    <body>
     
     <div>
     {/*Header navigation component*/}
@@ -85,7 +85,7 @@ const index = () => {
         `}}>
         </script>
     </head>
-    </>
+    </body>
   )
 }
 //Exporting index component

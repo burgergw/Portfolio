@@ -8,7 +8,7 @@ import Script from 'next/script';
 //Project page, functional arrow component, that displays projects i have worked on
 const projects = () => {
   return (
-    <>
+    <body>
     
     <div>
         <NavLink />
@@ -41,7 +41,7 @@ const projects = () => {
         `}}>
         </script>
     </head>
-    </>
+    </body>
   )
 }
 //Exporting projects component
