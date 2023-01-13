@@ -16,7 +16,7 @@ const NavLink = () => {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-S0ECD82STC');
+        gtag('config', 'G-E6Q22XEYGG');
         `}}>
         </script>
     </head>
