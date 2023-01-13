@@ -8,6 +8,19 @@ import Script from 'next/script';
 //Functional arrow component that act as the contact page
 const contact = () => {
   return (
+    <>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        `}}>
+        </script>
+    </head>
     <body>
     
     <div>
@@ -37,19 +50,9 @@ const contact = () => {
         `}</style>
         
     </div>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0ECD82STC');
-        `}}>
-        </script>
-    </head>
+    
     </body>
+    </>
   )
 }
 //Exporting contact component  

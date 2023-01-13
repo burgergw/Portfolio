@@ -10,6 +10,19 @@ import Script from 'next/script';
 //Index functional arrow component that acts as home/about page 
 const index = () => {
   return (
+    <>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        `}}>
+        </script>
+    </head>
     <body>
     
     <div>
@@ -73,19 +86,9 @@ const index = () => {
         `}</style>
         
     </div>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0ECD82STC');
-        `}}>
-        </script>
-    </head>
+    
     </body>
+    </>
   )
 }
 //Exporting index component

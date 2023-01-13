@@ -8,6 +8,19 @@ import Script from 'next/script';
 //Project page, functional arrow component, that displays projects i have worked on
 const projects = () => {
   return (
+    <>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0ECD82STC');
+        `}}>
+        </script>
+    </head>
     <body>
     
     <div>
@@ -29,19 +42,10 @@ const projects = () => {
         `}</style>
         
     </div>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0ECD82STC"></script>
-        <script dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0ECD82STC');
-        `}}>
-        </script>
-    </head>
+    
     </body>
+
+    </>
   )
 }
 //Exporting projects component
